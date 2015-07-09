@@ -13,10 +13,11 @@
       "description" : "test action for git",
       "inputParamList" : [ {
          "name" : "Command Para1",
+         "prefix" : "classpath=",
          "type" : "String",
          "description" : "Command Para1 Description",
          "required" : false,
-         "defaultValue" : "ipconfig",
+         "defaultValue" : "C:\\",
          "variableName" : "commandpara1",
          "arrayOption" : false
       } ],
@@ -51,11 +52,11 @@
       "successMessage" : "Execution succeeded",
       "type" : "CLI",
       "complete" : true,
-      "lastModified" : "2015-07-09T14:31:44.621+08:00",
+      "lastModified" : "2015-07-09T15:00:35.601+08:00",
       "className" : "TestAction",
       "packageName" : "com.mycompany.gittest",
       "cliCommands" : [ {
-         "command" : "${Command Para1}",
+         "command" : "set ${Command Para1}",
          "execDir" : "C:\\",
          "osType" : "WINDOWS",
          "overwriteOutput" : false,
