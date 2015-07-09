@@ -1,0 +1,11 @@
+{
+   "ActionPack" : {
+      "name" : "GitTest",
+      "category" : "CjCate",
+      "author" : "CA",
+      "version" : "1.0.1  ",
+      "lastModified" : "2015-07-09T14:29:38.075+08:00",
+      "tags" : [ ],
+      "packageName" : "gittest"
+   }
+}

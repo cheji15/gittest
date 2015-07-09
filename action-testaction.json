@@ -1,0 +1,73 @@
+{
+   "CLIAction" : {
+      "actionPack" : {
+         "name" : "GitTest",
+         "category" : "CjCate",
+         "author" : "CA",
+         "version" : "1.0.1   ",
+         "lastModified" : "2015-07-09T14:29:38.075+08:00",
+         "tags" : [ ],
+         "packageName" : "gittest"
+      },
+      "name" : "TestAction",
+      "description" : "test action for git",
+      "inputParamList" : [ {
+         "name" : "Command Para1",
+         "type" : "String",
+         "description" : "Command Para1 Description",
+         "required" : false,
+         "defaultValue" : "ipconfig",
+         "variableName" : "commandpara1",
+         "arrayOption" : false
+      } ],
+      "outputParamList" : [ {
+         "name" : "Execution Output",
+         "type" : "String",
+         "description" : "This output parameter holds the standard output of the command execution.",
+         "filterValue" : "[\\s\\S]*",
+         "filterType" : "REGEX",
+         "variableName" : "executionoutput",
+         "source" : "standardOut",
+         "arrayOption" : false
+      }, {
+         "name" : "Error Output",
+         "type" : "String",
+         "description" : "This output parameter holds the standard error output of the command execution.",
+         "filterValue" : "[\\s\\S]*",
+         "filterType" : "REGEX",
+         "variableName" : "erroroutput",
+         "source" : "standardError",
+         "arrayOption" : false
+      }, {
+         "name" : "Exit Code",
+         "type" : "Integer",
+         "description" : "This output parameter holds the returned exit code of the command execution.",
+         "filterValue" : "",
+         "filterType" : "REGEX",
+         "variableName" : "exitcode",
+         "source" : "exitCode",
+         "arrayOption" : false
+      } ],
+      "successMessage" : "Execution succeeded",
+      "type" : "CLI",
+      "complete" : true,
+      "lastModified" : "2015-07-09T14:31:44.621+08:00",
+      "className" : "TestAction",
+      "packageName" : "com.mycompany.gittest",
+      "cliCommands" : [ {
+         "command" : "${Command Para1}",
+         "execDir" : "C:\\",
+         "osType" : "WINDOWS",
+         "overwriteOutput" : false,
+         "timeout" : 0,
+         "waitForProcessToFinish" : false
+      }, {
+         "command" : "",
+         "execDir" : "/tmp/",
+         "osType" : "LINUX",
+         "overwriteOutput" : false,
+         "timeout" : 0,
+         "waitForProcessToFinish" : false
+      } ]
+   }
+}
