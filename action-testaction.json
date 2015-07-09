@@ -17,7 +17,7 @@
          "type" : "String",
          "description" : "Command Para1 Description",
          "required" : false,
-         "defaultValue" : "C:\\",
+         "defaultValue" : "C:/installer",
          "variableName" : "commandpara1",
          "arrayOption" : false
       } ],
@@ -52,7 +52,7 @@
       "successMessage" : "Execution succeeded",
       "type" : "CLI",
       "complete" : true,
-      "lastModified" : "2015-07-09T15:00:35.601+08:00",
+      "lastModified" : "2015-07-09T16:00:59.56+08:00",
       "className" : "TestAction",
       "packageName" : "com.mycompany.gittest",
       "cliCommands" : [ {
